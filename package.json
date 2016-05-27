@@ -28,7 +28,6 @@
     "test:ie": "npm run test -- --browsers IE",
     "coveralls": "cat ./coverage/lcov/lcov.info | coveralls"
   },
-  "pre-commit": "lint:staged",
   "babel": {
     "presets": [
       "es2015-webpack",
@@ -37,7 +36,9 @@
     ],
     "env": {
       "production": {
-        "only": ["app"],
+        "only": [
+          "app"
+        ],
         "plugins": [
           "transform-react-remove-prop-types",
           "transform-react-constant-elements",
@@ -68,14 +69,26 @@
     },
     "rules": {
       "import/no-unresolved": 2,
-      "comma-dangle": [2, "always-multiline"],
-      "indent": [2, 2, { "SwitchCase": 1 }],
+      "comma-dangle": [
+        2,
+        "always-multiline"
+      ],
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
       "no-console": 1,
       "max-len": 0,
       "prefer-template": 2,
       "no-use-before-define": 0,
       "newline-per-chained-call": 0,
-      "arrow-body-style": [2, "as-needed"],
+      "arrow-body-style": [
+        2,
+        "as-needed"
+      ],
       "jsx-a11y/href-no-hash": 2,
       "jsx-a11y/label-has-for": 2,
       "jsx-a11y/mouse-events-have-key-events": 2,
@@ -112,9 +125,14 @@
       "color-hex-case": "upper",
       "string-quotes": "single",
       "font-family-name-quotes": "always-where-recommended",
-      "selector-pseudo-class-no-unknown": [true, {
-        "ignorePseudoClasses": ["global"]
-      }],
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global"
+          ]
+        }
+      ],
       "indentation": 2
     }
   },
@@ -190,7 +208,6 @@
     "karma-safari-launcher": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
-    "lint-staged": "^0.2.1",
     "mocha": "^2.4.5",
     "ngrok": "2.1.8",
     "null-loader": "^0.1.1",
