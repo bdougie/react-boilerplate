@@ -21,7 +21,7 @@
     "setup": "node ./internals/scripts/setup.js",
     "clean": "shjs ./internals/scripts/clean.js",
     "generate": "plop --plopfile internals/generators/index.js",
-    "lint": "npm run lint:js && npm run lint:css",
+    "lint": "npm run lint:js",
     "lint:js": "npm run lint:eslint && npm run lint:jscs",
     "lint:js:staged": "npm run lint:eslint:staged && npm run lint:jscs:staged",
     "lint:eslint": "eslint . --ignore-path .gitignore",
